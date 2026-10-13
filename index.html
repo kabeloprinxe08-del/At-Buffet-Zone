@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>At Buffet Zone | All You Can Eat, Pretoria Central</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg"></div><div id="prog"></div><canvas id="gl"></canvas><div id="logo3d"></div><div class="glow" id="glow"></div>
+<nav><b>AT BUFFET ZONE</b><div><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#team">Team</a><a href="#menu">Menu</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a href="#events">Book</a></div></nav>
+
+<header class="hero">
+  <p class="eyebrow">Pretoria Central &middot; All you can eat</p>
+  <h1 id="t">At Buffet Zone</h1>
+  <p>Well-portioned dishes, endless refills and a warm, cozy room. Come hungry, leave happy.</p>
+  <div><a class="btn solid" href="#events">Reserve a table</a><a class="btn" href="#menu">Explore the menu</a></div>
+  <div class="cue"></div>
+</header>
+
+<div class="mq"><div id="mq"></div></div>
+
+<section id="about" class="rv">
+  <p class="eyebrow">About Us</p><h2>Our story</h2>
+  <div class="card" id="abt"></div>
+</section>
+
+<section class="rv">
+  <p class="eyebrow">The Experience</p><h2>Everything, done properly</h2>
+  <div class="grid">
+    <div class="card tilt"><h3>All You Can Eat</h3><p>Affordable buffet with a wide variety of dishes.</p></div>
+    <div class="card tilt"><h3>Family Friendly</h3><p>Good for kids, great for groups and gatherings.</p></div>
+    <div class="card tilt"><h3>Dine, Take, Deliver</h3><p>Eat in, outside on the seating area, or take it home.</p></div>
+  </div>
+</section>
+
+<section class="rv">
+  <div class="card pick" id="pick">
+    <p class="eyebrow">Spontaneous pick</p>
+    <h3 id="pn">-</h3><p id="pd" style="margin-top:6px"></p>
+    <button class="btn" id="sur" type="button">Surprise me</button>
+  </div>
+</section>
+
+<section id="gallery" class="rv">
+  <p class="eyebrow">Photos &amp; Videos</p><h2>Fresh off the buffet</h2>
+  <div class="gal" id="gal"></div>
+  <h3 class="sub">Moments from the kitchen</h3>
+  <div class="reels" id="reels"></div>
+</section>
+
+<section id="team" class="rv">
+  <p class="eyebrow">The People</p><h2>The Buffet Zone Team</h2>
+  <div class="card" style="padding:12px"><div class="tph" id="tgrid"></div><p id="tcap" style="margin:14px 8px 4px;text-align:center"></p></div>
+</section>
+
+<section id="menu" class="rv">
+  <p class="eyebrow">The Menu</p><h2>Taste of the Zone</h2>
+  <div class="tools"><input id="q" type="search" placeholder="Search dishes and drinks..." aria-label="Search menu"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="list"></div>
+  <div class="grid" style="margin-top:28px">
+    <div class="card tilt"><h3>Adults</h3><div class="price">R 000</div><p>Per person, all you can eat.</p></div>
+    <div class="card tilt"><h3>Children</h3><div class="price">R 000</div><p>Little ones, small price.</p></div>
+  </div>
+  <p style="color:var(--mute);font-size:.8rem;margin-top:14px">Placeholder dishes and prices. Final menu coming soon.</p>
+</section>
+
+<section id="reviews" class="rv">
+  <p class="eyebrow">Loved in Pretoria</p><h2>What guests say</h2>
+  <div class="card rate">
+    <div style="text-align:center"><div class="big" id="num">0.0</div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p style="color:var(--mute);font-size:.85rem"><span id="cnt">0</span> Google reviews</p></div>
+    <div id="bars"></div>
+  </div>
+  <h3 style="margin:30px 0 12px;color:var(--gold2);font-size:1.1rem">What this place offers</h3>
+  <div class="chips" id="chips"></div>
+</section>
+
+<section id="visit" class="rv">
+  <p class="eyebrow">Visit Us</p><h2>Hours &amp; Location <span id="badge" class="badge"></span></h2>
+  <div class="grid">
+    <div class="hrs" id="hrs"></div>
+    <div class="card"><h3>Find us</h3><p>WF Nkomo Street, Pretoria Central</p><p style="margin-top:10px"><a id="call" href="#">Call us</a> &middot; <a id="wa" href="#">WhatsApp</a></p><p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&query=At+Buffet+Zone+WF+Nkomo+Street+Pretoria" target="_blank" rel="noopener">Get directions</a> &middot; <a href="https://www.instagram.com/atbuffetzone" target="_blank" rel="noopener">Instagram</a></p><p style="margin-top:10px;color:var(--mute);font-size:.85rem">Wheelchair accessible entrance, seating, parking and restroom.</p></div>
+  </div>
+  <div class="card map"><iframe title="At Buffet Zone on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=At%20Buffet%20Zone%2C%20WF%20Nkomo%20Street%2C%20Pretoria&amp;output=embed"></iframe><a class="mapbtn btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=At+Buffet+Zone+WF+Nkomo+Street+Pretoria">Open in Google Maps</a></div>
+</section>
+
+<section id="events" class="rv">
+  <p class="eyebrow">Reservations &amp; Events</p><h2>Book your table</h2>
+  <p style="color:var(--mute);margin-bottom:20px">Group reservations, birthdays, family gatherings and private events. Send your details and we will confirm.</p>
+  <form id="f">
+    <div class="row"><input name="name" placeholder="Your name" required><input name="phone" type="tel" placeholder="Phone number" required></div>
+    <div class="row"><input name="date" type="date" required aria-label="Date"><input name="guests" type="number" min="1" placeholder="Number of guests" required></div>
+    <select name="type"><option>Group reservation</option><option>Birthday</option><option>Family gathering</option><option>Corporate event</option><option>Other</option></select>
+    <textarea name="msg" rows="4" placeholder="Anything else we should know?"></textarea>
+    <div><button class="btn solid" type="submit" style="margin-left:0">Send via WhatsApp</button><button class="btn" type="button" id="mail">Send by email</button></div>
+  </form>
+</section>
+
+<section id="social" class="rv">
+  <p class="eyebrow">Follow Us</p><h2>Find us online</h2>
+  <div class="socs" id="soc"></div>
+</section>
+
+<footer class="rv" id="foot">
+  <div class="fcta"><div><h3>Hungry already?</h3><p>Reserve a table for your family, friends or group.</p></div><a class="btn solid" href="#events">Reserve a table</a></div>
+  <div class="fgrid">
+    <div><div class="flogo">AT BUFFET ZONE</div><p>All you can eat in the heart of Pretoria Central. Well-portioned dishes, a warm room and endless refills. Come hungry, leave happy.</p><div class="fsoc" id="fsoc"></div></div>
+    <div><h4>Explore</h4><a href="#about">About us</a><a href="#gallery">Gallery</a><a href="#menu">Menu</a><a href="#reviews">Reviews</a><a href="#events">Reservations</a></div>
+    <div><h4>Visit</h4><p>WF Nkomo Street<br>Pretoria Central</p><a id="fcall" href="#"></a><a id="fmail" href="#"></a><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=At+Buffet+Zone+WF+Nkomo+Street+Pretoria">Get directions</a></div>
+    <div><h4>Opening hours</h4><div class="fhrs" id="fhrs"></div></div>
+  </div>
+  <div class="fbadges"><span>&#9733; 4.3 on Google</span><span>All you can eat</span><span>Family friendly</span><span>Dine-in, takeout &amp; delivery</span><span>Credit cards accepted</span><span>Wheelchair accessible</span></div>
+  <div class="fbot"><span>&copy; <span id="yr"></span> At Buffet Zone. All rights reserved.</span><span><a href="#">Privacy</a> &middot; <a href="#">Terms</a></span><a href="#" id="top">&uarr; Back to top</a></div>
+</footer>
+<div id="lb" aria-hidden="true"><button id="lbx" aria-label="Close">&times;</button><div id="lbc"></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
