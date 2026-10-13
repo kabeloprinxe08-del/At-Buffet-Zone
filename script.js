@@ -34,7 +34,18 @@ function count(el,to,dec,ms){var t0=performance.now();(function f(t){var k=Math.
 
 /* gallery + chef */
 var IMG=["jpg","jpeg","png","webp","JPG","JPEG","PNG"],VID=["mp4","mov","webm","MP4","MOV"];
-function cands(path,exts){var o=[],p=path.split("/"),f=p.pop(),F=f.charAt(0).toUpperCase()+f.slice(1);[f,F].forEach(function(n){exts.forEach(function(x){o.push(p.join("/")+"/"+n+"."+x)})});return o}
+function cands(path, exts) {
+  var o = [], p = path.split("/"), f = p.pop();
+  var names = [f, f.charAt(0).toUpperCase() + f.slice(1), f.toUpperCase()];
+
+  names.forEach(function(n) {
+    exts.forEach(function(x) {
+      o.push(p.join("/") + "/" + n + "." + x);
+    });
+  });
+
+  return o;
+}
 function load(el,list,fail){var i=0;function next(){if(i<list.length)el.src=list[i++];else fail()}el.addEventListener("error",next);next()}
 var vio=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause()})},{threshold:.35});
 function slot(box,tag,list,cap,first){var el=document.createElement(tag);
