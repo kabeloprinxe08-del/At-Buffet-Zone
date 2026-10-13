@@ -36,7 +36,11 @@ function count(el,to,dec,ms){var t0=performance.now();(function f(t){var k=Math.
 var IMG=["jpg","jpeg","png","webp","JPG","JPEG","PNG"],VID=["mp4","mov","webm","MP4","MOV"];
 function cands(path, exts) {
   var o = [], p = path.split("/"), f = p.pop();
-  var names = [f, f.charAt(0).toUpperCase() + f.slice(1), f.toUpperCase()];
+  var names = [
+    f,
+    f.charAt(0).toUpperCase() + f.slice(1),
+    f.toUpperCase()
+  ];
 
   names.forEach(function(n) {
     exts.forEach(function(x) {
